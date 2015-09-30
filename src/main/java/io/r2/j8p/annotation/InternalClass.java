@@ -3,22 +3,23 @@ package io.r2.j8p.annotation;
 /**
  * InternalClass
  */
-public class InternalClass {
+public class InternalClass implements IInternal {
 
     static int versionCounter = 0;
 
     int myVersion;
 
-    InternalClass() {
+    public InternalClass() {
         myVersion = versionCounter;
         versionCounter++;
     }
 
-    int getVersion() {
+    @Override
+    public int getVersion() {
         return myVersion;
     }
 
-    static void reset() {
+    static public void reset() {
         versionCounter = 0;
     }
 }

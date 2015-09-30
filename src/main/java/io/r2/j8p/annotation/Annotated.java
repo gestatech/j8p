@@ -8,7 +8,7 @@ package io.r2.j8p.annotation;
 @ClassParams(version="1.0", tags={"simple", "annotation", "testing"})
 public class Annotated {
 
-    @SpecialField public InternalClass internal;
+    @SpecialField public IInternal internal;
 
     public Annotated() {
         internal = new InternalClass();

@@ -15,8 +15,9 @@ public class CreateNewInstance {
         for (Field f : obj.getClass().getFields()) {
             if (f.getAnnotation(SpecialField.class) != null) {
                 String name = f.getName();
-                Class<?> clazz = f.getType();
-                System.out.println("Setting "+name+" to new "+clazz.getName());
+                Class<?> iface = f.getType();
+                Class<?> clazz = f.get(obj).getClass();
+                System.out.println("."+name+" = ("+iface.getName()+") new "+clazz.getName()+"()");
                 f.set(obj, clazz.newInstance());
             }
         }
