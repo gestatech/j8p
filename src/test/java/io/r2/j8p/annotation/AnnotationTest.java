@@ -1,5 +1,6 @@
 package io.r2.j8p.annotation;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import static org.testng.Assert.*;
@@ -12,7 +13,7 @@ public class AnnotationTest {
 
     Annotated annotatedObj;
 
-    @BeforeTest
+    @BeforeMethod
     void setup() {
         InternalClass.reset();
         annotatedObj = new Annotated();
@@ -25,6 +26,7 @@ public class AnnotationTest {
 
     @Test
     void recreate() throws Exception {
+        assertEquals(annotatedObj.getVersion(), 0);
         CreateNewInstance.recreateSpecial(annotatedObj);
         assertEquals(annotatedObj.getVersion(), 1);
     }
