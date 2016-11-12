@@ -5,5 +5,5 @@ package io.r2.j8p.annotation;
  */
 public interface IInternal {
 
-    public int getVersion();
+    int getVersion();
 }

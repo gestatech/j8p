@@ -2,15 +2,17 @@
 
 Quick and dirty snippets in preparation for the Java 8 certification exam.
 
+Trivial classes are just added as-is, more complicated with a simple unit test to try.
+
 ## Upgrade to Java SE 8 OCP ( Java SE 6 and all prior versions) 1Z0-813 - topics
 
 
 ### Language Enhancements
 
 - [Basics](src/main/java/io/r2/j8p/t1_language/Basics.java) Develop code that uses String objects in the switch statement, binary literals, and numeric literals, including underscores in literals
-- Develop code that uses try-with-resources statements, including using classes that implement the AutoCloseable interface
-- Develop code that handles multiple Exception types in a single catch block
-- Use static and default methods of an interface including inheritance rules for a default method
+- [TryWithResources](src/main/java/io/r2/j8p/t1_language/TryWithResources.java) Develop code that uses try-with-resources statements, including using classes that implement the AutoCloseable interface
+- [MultiCatch](src/main/java/io/r2/j8p/t1_language/MultiCatch.java) Develop code that handles multiple Exception types in a single catch block
+- [Interfaces](src/main/java/io/r2/j8p/t1_language/Interfaces.java) Use static and default methods of an interface including inheritance rules for a default method
 
 ### Concurrency
 
