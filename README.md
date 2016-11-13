@@ -19,12 +19,12 @@ Trivial classes are just added as-is, more complicated with a simple unit test t
 - [Synchronizers](src/main/java/io/r2/j8p/t2_concurrency/Synchronizers.java), [ConcurrentCollections](notes/ConcurrentCollections.md)  Use classes from the java.util.concurrent package including CyclicBarrier and CopyOnWriteArrayList with a focus on the advantages over and differences from the traditional java.util collections 
 - [LockAtomic](src/main/java/io/r2/j8p/t2_concurrency/LockAtomic.java)  Use Lock, ReadWriteLock, and ReentrantLock classes in the java.util.concurrent.locks and java.util.concurrent.atomic packages to support lock-free thread-safe programming on single variables
 - [ExecutorEx](src/main/java/io/r2/j8p/t2_concurrency/ExecutorEx.java) Use Executor, ExecutorService, Executors, Callable, and Future to execute tasks using thread pools
-- [ForkJoin](src/main/java/io/r2/j8p/t2_concurrency/ForkJoin.java)  Use the parallel Fork/Join Framework
+- [ForkJoin](src/main/java/io/r2/j8p/t2_concurrency/ForkJoin.java) Use the parallel Fork/Join Framework
 
 ### Localization
 
-- (not available) Describe the advantages of localizing an application and developing code that defines, reads, and sets the locale with a Locale object
-- (not available) Build a resource bundle for a locale and call a resource bundle from an application
+- [LocaleEx](src/main/java/io/r2/j8p/t2_concurrency/LocaleEx.java) Describe the advantages of localizing an application and developing code that defines, reads, and sets the locale with a Locale object
+- [Bundles](src/main/java/io/r2/j8p/t2_concurrency/Bundles.java) Build a resource bundle for a locale and call a resource bundle from an application
 - (not available) Create and manage date- and time-based events by using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration, including a combination of date and time in a single object
 - (not available) Format dates, numbers, and currency values for localization with the NumberFormat and DateFormat classes, including number and date format patterns
 - (not available) Work with dates and times across time zones and manage changes resulting from daylight savings
