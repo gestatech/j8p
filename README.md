@@ -6,7 +6,6 @@ Trivial classes are just added as-is, more complicated with a simple unit test t
 
 ## Upgrade to Java SE 8 OCP ( Java SE 6 and all prior versions) 1Z0-813 - topics
 
-
 ### Language Enhancements
 
 - [Basics](src/main/java/io/r2/j8p/t1_language/Basics.java) Develop code that uses String objects in the switch statement, binary literals, and numeric literals, including underscores in literals
