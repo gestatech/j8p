@@ -24,9 +24,9 @@ Trivial classes are just added as-is, more complicated with a simple unit test t
 
 - [LocaleEx](src/main/java/io/r2/j8p/t2_concurrency/LocaleEx.java) Describe the advantages of localizing an application and developing code that defines, reads, and sets the locale with a Locale object
 - [Bundles](src/main/java/io/r2/j8p/t2_concurrency/Bundles.java) Build a resource bundle for a locale and call a resource bundle from an application
-- (not available) Create and manage date- and time-based events by using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration, including a combination of date and time in a single object
-- (not available) Format dates, numbers, and currency values for localization with the NumberFormat and DateFormat classes, including number and date format patterns
-- (not available) Work with dates and times across time zones and manage changes resulting from daylight savings
+- [LocalDateAndTime](src/main/java/io/r2/j8p/t2_concurrency/LocalDateAndTime.java) Create and manage date- and time-based events by using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration, including a combination of date and time in a single object
+- [NumberDateFormat](src/main/java/io/r2/j8p/t2_concurrency/NumberDateFormat.java) Format dates, numbers, and currency values for localization with the NumberFormat and DateFormat classes, including number and date format patterns
+- [ZonedTimes](notes/ZonedTimes.md) Work with dates and times across time zones and manage changes resulting from daylight savings
 
 ### Java File I/O (NIO.2)
 
