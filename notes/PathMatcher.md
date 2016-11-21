@@ -1,0 +1,3 @@
+# Find a file by using the PathMatcher interface
+
+The PathMatcher interface is actually a functional interface, and an implementation is created by the FileSystem's getPathMatcher method for a glob pattern. Own implementations for this interface may not be plugged in into the system, so this question doesn't really makes sense, except maybe for creating a PathMatcher for a glob pattern and then invoking it directly.

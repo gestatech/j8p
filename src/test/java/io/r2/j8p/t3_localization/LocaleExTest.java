@@ -7,12 +7,10 @@ import java.util.Locale;
 import static org.testng.Assert.*;
 
 /**
- * LocaleExTest
- *
- * @author robymus <r@r2.io>
+ * LocaleExTest - not a real test, just writing to stdout
  */
 public class LocaleExTest {
-    @Test
+    // @Test
     public void debugOutput() throws Exception {
         Locale def = Locale.getDefault();
         System.out.println(LocaleEx.currentLocale());
