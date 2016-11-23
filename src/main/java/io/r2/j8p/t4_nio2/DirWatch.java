@@ -38,7 +38,7 @@ public class DirWatch {
 
                 // the context is the path for which the event has happened
                 // as WatchEvent may have other contexts too, we have to cast manually
-                WatchEvent<Path> ev = (WatchEvent<Path>)event;
+                @SuppressWarnings("unchecked") WatchEvent<Path> ev = (WatchEvent<Path>)event;
 
                 System.out.println("Event: "+kind.toString()+" for "+ev.context().toString());
             }

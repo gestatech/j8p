@@ -39,10 +39,10 @@ Trivial classes are just added as-is, more complicated with a simple unit test t
 
 ### Lambda
 
-- (not available) Define and write functional interfaces and describe the interfaces of the java.util.function package
-- (not available) Describe a lambda expression; refactor the code that uses an anonymous inner class to use a lambda expression; describe type inference and target typing
-- (not available) Develop code that uses the built-in interfaces included in the java.util.function package, such as Function, Consumer, Supplier, UnaryOperator, Predicate, and Optional APIs, including the primitive and binary variations of the interfaces
-- (not available) Develop code that uses a method reference, including refactoring a lambda expression to a method reference
+- [FunctionalIface](src/main/java/io/r2/j8p/t5_lambda/FunctionalIface.java) Define and write functional interfaces and describe the interfaces of the java.util.function package
+- [LambdaInfo](src/main/java/io/r2/j8p/t5_lambda/LambdaInfo.java) Describe a lambda expression; refactor the code that uses an anonymous inner class to use a lambda expression; describe type inference and target typing
+- [OptionalAPI](src/main/java/io/r2/j8p/t5_lambda/OptionalAPI.java) [FunctionalIface](src/main/java/io/r2/j8p/t5_lambda/FunctionalIface.java) Develop code that uses the built-in interfaces included in the java.util.function package, such as Function, Consumer, Supplier, UnaryOperator, Predicate, and Optional APIs, including the primitive and binary variations of the interfaces
+- [MethodRef](src/main/java/io/r2/j8p/t5_lambda/MethodRef.java) Develop code that uses a method reference, including refactoring a lambda expression to a method reference
 
 ### Java Collections
 
