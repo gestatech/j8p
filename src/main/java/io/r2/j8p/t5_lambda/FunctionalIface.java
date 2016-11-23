@@ -26,20 +26,47 @@ public class FunctionalIface {
     public void builtInFunctions() {
 
         // object version
+
+        // consumer: (method: accept)
         Consumer<String> c = (String x) -> {};
         BiConsumer<String, Integer> bc = (String x, Integer y) -> {};
 
+        // can be chained with default method andThen
+        Consumer<String> c2 = c.andThen(System.out::println);
+
+        // function: (method: apply)
         Function<String, Integer> f = (String x) -> Integer.MAX_VALUE;
         BiFunction<String, Integer, Double> bf = (String x, Integer y) -> Double.MAX_VALUE;
 
+        // Function can be compose with andThen (new function after) or compose (new function before)
+        // BiFunction only support andTHen
+        f.compose((x) -> "x"+x);
+        f.andThen((x) -> -x);
+
+        // static initializer for identity function
+        Function<Integer, Integer> iii = Function.identity();
+
+
+        // operators are special cases of Function (method: apply)
         UnaryOperator<Integer> uo = (Integer x) -> Integer.MAX_VALUE;
         BinaryOperator<Integer> bo = (Integer x, Integer y) -> Integer.max(x, y);
 
+        // predicate: (method: test)
         Predicate<String> p = (String x) -> true;
+
+        // composable by and, or, or negate
+        p.negate().and((x) -> x.length() == 0);
+
+        // static initializer for equality
+        Integer val = 5;
+        Predicate<Integer> isVal = Predicate.isEqual(val);
+
+        // supplier: (method: get)
         Supplier<Integer> ss = () -> Integer.MAX_VALUE;
 
         // primitive type versions
         // for all primitive types Int, Long, Double:
+        // method name has AsInt, AsDouble, AsLong suffix
 
         IntConsumer ic = (int x) -> {};
         ObjIntConsumer<String> oic = (String s, int x) -> {};

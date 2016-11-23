@@ -49,14 +49,14 @@ Trivial classes are just added as-is, more complicated with a simple unit test t
 - [Diamond](src/main/java/io/r2/j8p/t6_collections/Diamond.java) Develop code that uses diamond with generic declarations
 - [CollectionBasics](src/main/java/io/r2/j8p/t6_collections/CollectionBasics.java) Develop code that iterates a collection, filters a collection, and sorts a collection by using lambda expressions
 - [CollectionSearch](src/main/java/io/r2/j8p/t6_collections/CollectionSearch.java) Search for data by using methods, such as findFirst(), findAny(), anyMatch(), allMatch(), and noneMatch()
-- (not available) Perform calculations on Java Streams by using count, max, min, average, and sum methods and save results to a collection by using the collect method and Collector class, including the averagingDouble, groupingBy, joining, partitioningBy methods
 - [CollectionBasics](src/main/java/io/r2/j8p/t6_collections/CollectionBasics.java) Develop code that uses Java SE 8 collection improvements, including the Collection.removeIf(), List.replaceAll(), Map.computeIfAbsent(), and Map.computeIfPresent() methods
-- (not available) Develop  code that uses the merge(), flatMap(), and map() methods on Java Streams
 
 ### Java Streams
 
-- (not available) Describe the Stream interface and pipelines; create a stream by using the Arrays.stream() and  IntStream.range() methods; identify the lambda operations that are lazy
-- (not available) Develop code that uses parallel streams, including decomposition operation and reduction operation in streams
+- [StreamBasics](src/main/java/io/r2/j8p/t7_streams/StreamBasics.java) Describe the Stream interface and pipelines; create a stream by using the Arrays.stream() and  IntStream.range() methods; identify the lambda operations that are lazy
+- [StreamCalc](src/main/java/io/r2/j8p/t7_streams/StreamCalc.java) [StreamCollector](src/main/java/io/r2/j8p/t7_streams/StreamCollector.java) Perform calculations on Java Streams by using count, max, min, average, and sum methods and save results to a collection by using the collect method and Collector class, including the averagingDouble, groupingBy, joining, partitioningBy methods _(this was moved from Java Collections category for clarity)_
+- [StreamMap](src/main/java/io/r2/j8p/t7_streams/StreamMap.java) Develop  code that uses the merge(), flatMap(), and map() methods on Java Streams _(this was moved from Java Collections category for clarity)_
+- [StreamCollectReduce](src/main/java/io/r2/j8p/t7_streams/StreamCollectReduce.java) Develop code that uses parallel streams, including decomposition operation and reduction operation in streams
  
  ### Extras not covered explicitly by official topic list
 - [NioCore](src/main/java/io/r2/j8p/t4_nio2/NioCore.java) Quick review of basic java.nio operations

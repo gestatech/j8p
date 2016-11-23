@@ -1,6 +1,9 @@
 package io.r2.j8p.t5_lambda;
 
 import java.util.Optional;
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
+import java.util.OptionalLong;
 
 /**
  * Develop code that uses the Optional APIs
@@ -45,8 +48,20 @@ public class OptionalAPI {
         // map maps to value or null, and if null, it is converted to empty optional
         // if not present, the result is empty optional
         Optional<Integer> mapped = x.map(((s) -> s.length() == 0 ? 0 : s.length()));
+    }
 
+    public void primitiveOptional() {
+        // there is a primitive version for optionals
 
+        OptionalInt oi = OptionalInt.of(3);
+        OptionalLong ol = OptionalLong.of(7);
+        OptionalDouble od = OptionalDouble.empty();
+
+        // these otherwise work the same, except the get methods are suffixed:
+
+        oi.getAsInt();
+        ol.getAsLong();
+        od.getAsDouble();
     }
 
 }
