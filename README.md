@@ -46,11 +46,11 @@ Trivial classes are just added as-is, more complicated with a simple unit test t
 
 ### Java Collections
 
-- (not available) Develop code that uses diamond with generic declarations
-- (not available) Develop code that iterates a collection, filters a collection, and sorts a collection by using lambda expressions
-- (not available) Search for data by using methods, such as findFirst(), findAny(), anyMatch(), allMatch(), and noneMatch()
+- [Diamond](src/main/java/io/r2/j8p/t6_collections/Diamond.java) Develop code that uses diamond with generic declarations
+- [CollectionBasics](src/main/java/io/r2/j8p/t6_collections/CollectionBasics.java) Develop code that iterates a collection, filters a collection, and sorts a collection by using lambda expressions
+- [CollectionSearch](src/main/java/io/r2/j8p/t6_collections/CollectionSearch.java) Search for data by using methods, such as findFirst(), findAny(), anyMatch(), allMatch(), and noneMatch()
 - (not available) Perform calculations on Java Streams by using count, max, min, average, and sum methods and save results to a collection by using the collect method and Collector class, including the averagingDouble, groupingBy, joining, partitioningBy methods
-- (not available) Develop code that uses Java SE 8 collection improvements, including the Collection.removeIf(), List.replaceAll(), Map.computeIfAbsent(), and Map.computeIfPresent() methods
+- [CollectionBasics](src/main/java/io/r2/j8p/t6_collections/CollectionBasics.java) Develop code that uses Java SE 8 collection improvements, including the Collection.removeIf(), List.replaceAll(), Map.computeIfAbsent(), and Map.computeIfPresent() methods
 - (not available) Develop  code that uses the merge(), flatMap(), and map() methods on Java Streams
 
 ### Java Streams
