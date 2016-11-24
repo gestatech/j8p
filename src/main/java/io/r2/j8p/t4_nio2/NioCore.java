@@ -63,7 +63,7 @@ public class NioCore {
         Socket s = null;
         SocketChannel sc = s.getChannel();
 
-        // chanelles support read/write to/from buffers
+        // channels support read/write to/from buffers
         ByteBuffer b = ByteBuffer.allocate(123);
         sc.read(b);
         sc.write(b);

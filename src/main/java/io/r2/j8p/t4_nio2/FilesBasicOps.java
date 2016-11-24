@@ -72,7 +72,7 @@ public class FilesBasicOps {
         BasicFileAttributes attrs = Files.readAttributes(file1, BasicFileAttributes.class);
         BasicFileAttributeView v = Files.getFileAttributeView(file1, BasicFileAttributeView.class);
         // v can read attrs (see above) and write times
-        // other views are availabl, like Posix, Dos, Acl, Owner
+        // other views are available, like Posix, Dos, Acl, Owner
 
 
         // get file storage to query storage attributes

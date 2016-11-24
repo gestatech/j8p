@@ -36,6 +36,7 @@ public class DirWalking {
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(start, (path) -> {
             return path.getFileName().toString().startsWith("a");
         })) {
+            // Note: this is not a stream, but an iterable object
             for (Path entry : stream) {
                 System.out.println(entry);
             }
@@ -45,6 +46,7 @@ public class DirWalking {
     static void walkStream(String startDir, String contentType) throws Exception {
         Path start = Paths.get(startDir);
 
+        // walk produces a stream
         Files.walk(start, 2 /* max depth, optional */)
                 .filter((x) -> {
                     try {
@@ -60,7 +62,7 @@ public class DirWalking {
     void walkFileTree(String startDir) throws Exception {
         Path start = Paths.get(startDir);
 
-        // or sumply with start dir and visitor
+        // or simply with start dir and visitor
         Files.walkFileTree(start, EnumSet.noneOf(FileVisitOption.class) /* options, eg. FOLLOW_LINKS */, 4 /* maxdepth */, new Visitor());
     }
 

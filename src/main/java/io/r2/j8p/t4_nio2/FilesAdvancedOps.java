@@ -43,7 +43,7 @@ public class FilesAdvancedOps {
     }
 
     public void ioShortHand(Path path) throws Exception {
-        // Files contains some great shorthands for opening a channel, buffered reader/writer or input/oputput stream
+        // Files contains some great shorthands for opening a channel, buffered reader/writer or input/output stream
         try (SeekableByteChannel c = Files.newByteChannel(path)) {}
 
         try (BufferedReader b = Files.newBufferedReader(path)) {}
